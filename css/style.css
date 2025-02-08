@@ -1,9 +1,18 @@
 *{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
 }
+:root{
+    --bg-color: #BFDBF7;
+    --box-bg: #fff;
+    --box-text: #A31621;
+    --btn-bg: black;
+    --btn-text: white;
+}
+
 body{
-    background-color: #BFDBF7;
+    background-color: var(--bg-color);  
     text-align: center;
 }
 .container{
@@ -28,8 +37,8 @@ body{
     border: none;
     box-shadow: 0 0 1rem rgba(0, 0, 0 ,0.3);
     font-size: 8vmin;
-    color:#A31621 ;
-    background-color: #fff;
+    color: var(--box-text);
+    background-color: var(--box-bg);
 }
 #reset-game{
     width: 10rem;
@@ -37,8 +46,8 @@ body{
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color:black ;
-    color: white;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
     border-radius: 1rem;
     border: none;
     cursor: pointer;
@@ -48,8 +57,8 @@ body{
     width: 10rem;
     padding: 1rem;
     text-align: center;
-    background-color:black ;
-    color: white;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
     border-radius: 1rem;
     border: none;
     cursor: pointer;
@@ -57,7 +66,7 @@ body{
 }
 
 #msg{
-    color:black;
+    color: black;
     font-size: 4vmin;
 }
 
@@ -72,5 +81,4 @@ body{
     display: flex;
     flex-direction: column;
     gap:1.5rem;
-
 }
