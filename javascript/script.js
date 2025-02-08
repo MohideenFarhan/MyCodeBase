@@ -1,8 +1,9 @@
-let boxes=document.querySelectorAll(".box");
-let restbtn=document.querySelector("#reset-game");
-let newGameBtn=document.querySelector("#new-game");
-let msgconatiner=document.querySelector(".msg-container");
-let msg=document.querySelector('#msg');
+const boxes=document.querySelectorAll(".box");
+const restbtn=document.querySelector("#reset-game");
+const newGameBtn=document.querySelector("#new-game");
+const msgconatiner=document.querySelector(".msg-container");
+const msg=document.querySelector('#msg');
+
 
 
 let turnO =true;
@@ -42,17 +43,17 @@ boxes.forEach((box)=>{
 });
 
 const disableBoxes=()=>{
-    for(let box of boxes){
+    boxes.forEach((box)=>{
         box.disabled=true;
-    }
-}
+    });
+};
 
 const EnableBoxes=()=>{
-    for(let box of boxes){
+    boxes.forEach((box)=>{
         box.disabled=false;
         box.innerText="";
-    }
-}
+    });
+};
 
 
 
